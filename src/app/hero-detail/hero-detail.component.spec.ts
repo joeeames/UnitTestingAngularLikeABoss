@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { HeroService } from '../hero.service';
 import { Location } from '@angular/common';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 describe('HeroDetailComponent (shallow tests)', () => {
 

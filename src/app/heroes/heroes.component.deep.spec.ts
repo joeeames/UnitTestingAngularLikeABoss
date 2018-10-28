@@ -4,7 +4,7 @@ import { HeroComponent } from '../hero/hero.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroService } from '../hero.service';
 import { Router } from '@angular/router';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 import { Directive, Input, NO_ERRORS_SCHEMA } from '@angular/core';
 
 @Directive({
