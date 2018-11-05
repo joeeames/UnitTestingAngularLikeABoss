@@ -1,0 +1,32 @@
+  // PROBLEM 1 - Fix Code Order
+  // it('should have 3 messages if starting with 2 when add is called', () => {
+  //   service.add('hello there!')
+  //   expect(service.messages.length).toBe(3);
+  //   service.messages = ['i like bunnies', 'I like pie!'];
+  // })
+
+    // PROBLEM 2 - FILL IN THE BLANK
+    // it('should add the heroes to the private member returned by getHeroes', () => {
+    //   mockHeroService.getHeroes.and.returnValue(of([{name: 'Bob'}]));
+    //   component.getHeroes();
+
+    //   expect(WHAT??)
+    // })
+
+    // PROBLEM 3 - FIX EVERYTHING
+    // it('should add a hero when add is called', () => {
+    //   expect(component.heroes.length).toBe(3);
+    //   component.heroes = [{id:1,name:'Al',strength:5}, {id:2,name:'Donald',strength:50}]
+    //   expect(component.heroes[2]).toEqual({id:3,name: 'Bob', strength: 11});
+    //   component.add('Bob');
+    //   mockHeroService.addHero.and.returnValue(of(WHAT))
+    // })
+
+  // PROBLEM 4 - Add Missing Code
+  // it('should add a new li when add is called', () => {
+  //   mockHeroService.getHeroes.and.returnValue(of(HEROES))
+  //   mockHeroService.addHero.and.returnValue(of({id:1, name: 'Bob', strength: 2}))
+
+  //   fixture.componentInstance.add('Bob');
+  //   expect(fixture.debugElement.queryAll(By.css('li')).length).toBe(4);
+  // })
