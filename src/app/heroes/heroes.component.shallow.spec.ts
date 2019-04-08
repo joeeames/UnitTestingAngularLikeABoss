@@ -40,10 +40,19 @@ describe('HeroesComponent (shallow tests)', () => {
     expect(fixture.componentInstance.heroes.length).toBe(3)
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should have the right count of li tags', () => {
     mockHeroService.getHeroes.and.returnValue(of(HEROES))
     fixture.detectChanges();
 
     expect(fixture.debugElement.queryAll(By.css('li')).length).toBe(3);
   });
+
+  // PROBLEM 4 - Add Missing Code
+  // it('should add a new li when add is called', () => {
+  //   mockHeroService.getHeroes.and.returnValue(of(HEROES))
+  //   mockHeroService.addHero.and.returnValue(of({id:1, name: 'Bob', strength: 2}))
+
+  //   fixture.componentInstance.add('Bob');
+  //   expect(fixture.debugElement.queryAll(By.css('li')).length).toBe(4);
+  // })
 });

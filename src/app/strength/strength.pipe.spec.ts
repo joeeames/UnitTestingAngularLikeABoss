@@ -10,4 +10,5 @@ describe('Pipe: Strength', () => {
     let pipe = new StrengthPipe();
     expect(pipe.transform(10)).toEqual('10 (strong)');
   });
+  
 });

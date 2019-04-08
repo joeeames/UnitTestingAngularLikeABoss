@@ -39,5 +39,22 @@ describe('HeroesComponent', () => {
 
       expect(mockHeroService.deleteHero).toHaveBeenCalled();
     })
+
+    // PROBLEM 2 - FILL IN THE BLANK
+    // it('should add the heroes to the private member returned by getHeroes', () => {
+    //   mockHeroService.getHeroes.and.returnValue(of([{name: 'Bob'}]));
+    //   component.getHeroes();
+
+    //   expect(WHAT??)
+    // })
+
+    // PROBLEM 3 - FIX EVERYTHING
+    // it('should add a hero when add is called', () => {
+    //   expect(component.heroes.length).toBe(3);
+    //   component.heroes = [{id:1,name:'Al',strength:5}, {id:2,name:'Donald',strength:50}]
+    //   expect(component.heroes[2]).toEqual({id:3,name: 'Bob', strength: 11});
+    //   component.add('Bob');
+    //   mockHeroService.addHero.and.returnValue(of(WHAT))
+    // })
   });
 });

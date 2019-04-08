@@ -16,6 +16,13 @@ describe('MessageService', () => {
 
     expect(service.messages.length).toBe(1);
   });
+
+  // PROBLEM 1 - Parsons Problem
+  // it('should have 3 messages if starting with 2 when add is called', () => {
+  //   service.add('hello there!')
+  //   expect(service.messages.length).toBe(3);
+  //   service.messages = ['i like bunnies', 'I like pie!'];
+  // })
   
   it('clear should remove all messages', () => {
     service.add('message1');
