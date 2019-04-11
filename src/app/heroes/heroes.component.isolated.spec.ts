@@ -40,6 +40,7 @@ describe('HeroesComponent', () => {
       expect(mockHeroService.deleteHero).toHaveBeenCalled();
     })
 
+
     // PROBLEM 2 - FILL IN THE BLANK
     // it('should add the heroes to the private member returned by getHeroes', () => {
     //   mockHeroService.getHeroes.and.returnValue(of([{name: 'Bob'}]));
@@ -47,6 +48,7 @@ describe('HeroesComponent', () => {
 
     //   expect(WHAT??)
     // })
+
 
     // PROBLEM 3 - FIX EVERYTHING
     // it('should add a hero when add is called', () => {
@@ -56,5 +58,21 @@ describe('HeroesComponent', () => {
     //   component.add('Bob');
     //   mockHeroService.addHero.and.returnValue(of(WHAT))
     // })
+
+    // PROBLEM 4 - WRITE THE COMPLETE TEST
+    // it('should not add a hero when the name is blank', () => {
+    //   component.heroes = [];
+    //   component.add(' ');
+    //   expect(component.heroes.length).toBe(0);
+    // })
+
+
+    // PROBLEM 5 - WRITE THE COMPLETE TEST
+    // it('should not call addHeroes when name is blank', () => {
+    //   component.heroes = [];
+    //   component.add(' ');
+    //   expect(mockHeroService.addHero).not.toHaveBeenCalled();
+    // })
+
   });
 });

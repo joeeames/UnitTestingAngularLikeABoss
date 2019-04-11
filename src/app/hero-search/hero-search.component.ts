@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, Subject, of } from 'rxjs';
 
 import {
-   debounceTime, distinctUntilChanged, switchMap
+   debounceTime, distinctUntilChanged, switchMap, tap, map
  } from 'rxjs/operators';
 
 import { Hero } from '../hero';

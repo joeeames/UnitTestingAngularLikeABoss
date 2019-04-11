@@ -77,9 +77,9 @@ describe('HeroDetailComponent (shallow tests)', () => {
     fixture.detectChanges();
     fixture.componentInstance.save();
     fixture.whenStable().then(() => {
-      console.log(1)
+      // console.log(1)
       expect(mockHeroSerivce.updateHero).toHaveBeenCalled()
     });
-    console.log(2)
+    // console.log(2)
   }))
 });
