@@ -1,8 +1,7 @@
 import { TestBed, fakeAsync, inject, tick } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { Http, BaseRequestOptions, Response, ResponseOptions } from '@angular/http';
+import { HttpClient  } from '@angular/common/http';
 import { HeroService } from './hero.service';
-import { HttpClient } from '@angular/common/http';
 import { Data } from '@angular/router';
 import { MessageService } from './message.service';
 
