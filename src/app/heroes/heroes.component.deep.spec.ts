@@ -5,7 +5,7 @@ import { HeroesComponent } from './heroes.component';
 import { HeroService } from '../hero.service';
 import { Router } from '@angular/router';
 import { of } from 'rxjs';
-import { Directive, Input } from '@angular/core';
+import { Directive, Input, NO_ERRORS_SCHEMA } from '@angular/core';
 
 // @Directive({
 //   selector: '[routerLink]',
@@ -21,7 +21,7 @@ import { Directive, Input } from '@angular/core';
 // }
 
 
-describe('HeroDetailComponent (deep tests)', () => {
+describe('Heroes (deep tests)', () => {
   let fixture: ComponentFixture<HeroesComponent>;
   let HEROES;
   let mockHeroService;
@@ -45,6 +45,9 @@ describe('HeroDetailComponent (deep tests)', () => {
       providers: [
         { provide: HeroService, useValue: mockHeroService },
       ],
+      schemas: [
+        // NO_ERRORS_SCHEMA
+      ]
     });
 
     fixture = TestBed.createComponent(HeroesComponent);
